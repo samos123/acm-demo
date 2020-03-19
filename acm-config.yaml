@@ -5,6 +5,8 @@ metadata:
 spec:
   # clusterName is required and must be unique among all managed clusters
   clusterName: standard-cluster1
+  policyController:
+    enabled: true
   git:
     syncRepo: https://github.com/samos123/acm-demo.git
     syncBranch: master
