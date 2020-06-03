@@ -1,0 +1,12 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: regulator-role-binding
+subjects:
+- kind: Group
+  name: regulators@example.com
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: regulator
+  apiGroup: rbac.authorization.k8s.io
