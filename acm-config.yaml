@@ -12,3 +12,4 @@ spec:
     syncBranch: master
     secretType: none
     policyDir: "foo-corp"
+    syncWait: 1
